@@ -7,7 +7,7 @@ router.get("/", async (ctx, next) => {
 router.post("/", async (ctx, next) => {
   let postdata = ctx.request.body; //注意是异步调用
   console.log(postdata)
-  ctx.body = postdata;
+  ctx.body = "{\"msg\":\"success\"}";
 });
 
 router.get("/string", async (ctx, next) => {

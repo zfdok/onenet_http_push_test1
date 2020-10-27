@@ -1,0 +1,7 @@
+{ 
+  msg:'{"projectId":"Sd5MPm","productId":"IaiJ9078ZN","deviceName":"esp_mqtts_001","messageType":"lifeCycle","data":{"status":"offline","time":1603781389128}}',
+  signature: '3mNbxeU+yMRfsW100kLuOw==',
+  time: 1603781389144,
+  id: '59ec21fa9fa3481aa2f8b2f209cbca91',
+  nonce: '|z/.*/+k' 
+}
