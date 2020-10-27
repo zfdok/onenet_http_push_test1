@@ -1,7 +1,7 @@
 const router = require('koa-router')()
 
 router.get('/', async (ctx, next) => {
-  ctx.body = 'koa2 string'
+  ctx.body = ctx.request.query.msg
 })
 
 router.get('/string', async (ctx, next) => {
