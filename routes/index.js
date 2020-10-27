@@ -6,6 +6,7 @@ router.get("/", async (ctx, next) => {
 
 router.post("/", async (ctx, next) => {
   let postdata = ctx.request.body; //注意是异步调用
+  print(postdata)
   ctx.body = postdata;
 });
 
