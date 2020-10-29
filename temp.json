@@ -1,7 +1,0 @@
-{
-  "projectId": "Sd5MPm",
-  "productId": "IaiJ9078ZN",
-  "deviceName": "esp_mqtts_001",
-  "messageType": "lifeCycle",
-  "data": { "status": "offline", "time": 1603781389128 }
-}

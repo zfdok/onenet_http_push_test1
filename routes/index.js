@@ -1,23 +1,10 @@
 const router = require("koa-router")();
+const query = require("../mysql/query"); //引入异步查询方法
+const { SHOW_ALL_DB } = require("../mysql/sql"); //部分引入sql库
 
 router.get("/", async (ctx, next) => {
-  ctx.body = ctx.request.query.msg;
-});
-
-router.post("/", async (ctx, next) => {
-  let postdata = ctx.request.body; //注意是异步调用
-  console.log(postdata)
-  ctx.body = "{\"msg\":\"success\"}";
-});
-
-router.get("/string", async (ctx, next) => {
-  ctx.body = "koa2 string";
-});
-
-router.get("/json", async (ctx, next) => {
-  ctx.body = {
-    title: "koa2 json",
-  };
+  let query_res = await query(SHOW_ALL_DB);//异步方法调用
+  ctx.body = query_res;
 });
 
 module.exports = router;
