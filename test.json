@@ -1,0 +1,20 @@
+{
+  "projectId":"Sd5MPm",
+  "productId":"IaiJ9078ZN",
+  "deviceName":"esp_mqtts_001",
+  "messageType":"notify",
+  "notifyType":"property",
+  "data":{
+    "id":"97",
+    "version":null,
+    "params":{
+      "temp":{
+        "value":32.2,
+        "time":1603961433480
+        },
+      "humi":{
+        "value":45.2,
+        "time":1603961433480}
+    }
+  }
+}
